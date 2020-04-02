@@ -1,0 +1,9 @@
+@atOpenOrder
+
+@at @e2e @android @payments
+scenario: create openOrder
+Given as an authenticated user login
+when I see overview screen
+Then I should click on new transfer
+And I initiate the payment
+And I save it as open order
